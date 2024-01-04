@@ -37,7 +37,6 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        rm $GITHUB_WORKSPACE/openwrt/target/linux/generic/backport-6.1/795-v6.3-05-r8152-reduce-the-control-transfer-of-rtl8152_get_ver.patch
         
     - name: 加载自定义脚本
       run: |
